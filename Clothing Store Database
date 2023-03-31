@@ -1,0 +1,25 @@
+--Create a clothing store database
+
+CREATE TABLE Fashion (ID INTEGER PRIMARY KEY, CLOTHING TEXT,BRAND TEXT, SIZE TEXT, PRICE INTEGER);
+
+INSERT INTO fashion VALUES (1, "Shirt", "Kirkland", "Small", 15);
+INSERT INTO fashion VALUES (2, "Pants", "Kirkland", "Small", 20);
+INSERT INTO fashion VALUES (3, "Shirt", "Kirkland", "Medium", 15);
+INSERT INTO fashion VALUES (4, "Pants", "Kirkland", "Medium", 20);
+INSERT INTO fashion VALUES (5, "Dress", "OhPolly", "Small", 45);
+INSERT INTO fashion VALUES (6, "Dress", "OhPolly", "Medium", 45);
+INSERT INTO fashion VALUES (7, "Shirt", "OhPolly", "Medium", 30);
+INSERT INTO fashion VALUES (8, "Shirt", "OhPolly", "Large", 30);
+INSERT INTO fashion VALUES (9, "Blouse", "Target", "Medium", 25);
+INSERT INTO fashion VALUES (10, "Blouse", "Target", "Large", 25);
+INSERT INTO fashion VALUES (11, "Pants", "Forever21", "Medium", 20);
+INSERT INTO fashion VALUES (12, "Pants", "Forever21", "XLarge", 20);
+INSERT INTO fashion VALUES (13, "Blouse", "Express", "Small", 40);
+INSERT INTO fashion VALUES (14, "Blouse", "Express", "Medium", 40);
+INSERT INTO fashion VALUES (15, "Blouse", "Express", "Large", 40);
+
+--display the database by size
+SELECT * FROM fashion ORDER BY size;
+
+--how much would I make after selling everything 
+SELECT SUM (price) from fashion; 
